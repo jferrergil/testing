@@ -15,6 +15,28 @@ function strictEquals(a, b) {
 
 describe('testing strictEqueals', () => {
   test('should be true 3 === 3', () => {
-    expect(3 === 3).toBe(true);
+    expect(isNaN === isNaN).toBe(true);
+  });
+
+  test('should be true 3 === 3', () => {
+    expect(1 === 1).toBe(true);
+  });
+  test('should be true 3 === 3', () => {
+    expect(strictEquals(NaN, NaN)).toBe(false);
+  });
+  test('should be true 3 === 3', () => {
+    expect(strictEquals(0, -0)).toBe(true);
+  });
+  test('should be true 3 === 3', () => {
+    expect(strictEquals(-0, 0)).toBe(true);
+  });
+  test('should be true 3 === 3', () => {
+    expect(strictEquals(false, false)).toBe(true);
+  });
+  test('should be true 3 === 3', () => {
+    expect(strictEquals(true, false)).toBe(false);
+  });
+  test('should be true 3 === 3', () => {
+    expect(strictEquals('oil', 'terrible')).toBe(fasle);
   });
 });
