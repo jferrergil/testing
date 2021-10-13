@@ -1,4 +1,4 @@
-function strictEquals(a, b) {
+export function strictEquals(a, b) {
   let result = Object.is(a, b);
   if (Number.isNaN(a) && Number.isNaN(b)) {
     result = false;
@@ -10,4 +10,5 @@ function strictEquals(a, b) {
   }
   return result;
 }
-console.log(strictEquals("a", "b"));
+
+export const myName = 'Jorge';
